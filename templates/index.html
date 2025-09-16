@@ -1,1 +1,59 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Import a modern, clean font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+        /* Basic resets for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* * Main styling for the page
+         * 1. Use Flexbox to easily center content.
+         * 2. Set a minimum height of 100% of the viewport height.
+         * 3. Apply a subtle, professional background gradient.
+         * 4. Set the default font for the page.
+        */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex; /* 1 */
+            justify-content: center; /* Horizontally center */
+            align-items: center;     /* Vertically center */
+            min-height: 100vh;       /* 2 */
+            background: linear-gradient(135deg, #ece9e6, #ffffff); /* 3 */
+            color: #333;             /* 4 */
+        }
+
+        /* * Styling for the heading text
+         * 1. Set a large, responsive font size.
+         * 2. Center the text for smaller screens where it might wrap.
+         * 3. Add a subtle text shadow to make it stand out.
+        */
+        h1 {
+            font-size: 4.5rem; /* 1 */
+            text-align: center; /* 2 */
+            color: #2c3e50;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 3 */
+        }
+
+        /* Make font size smaller on mobile devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the home page</h1>
+
+</body>
+</html>
