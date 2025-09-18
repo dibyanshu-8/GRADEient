@@ -18,4 +18,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY --chown=appuser:appuser . .
 
 # 7. Define the command to run your application
-CMD ["python3", "app.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
